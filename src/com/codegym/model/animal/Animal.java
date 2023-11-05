@@ -2,6 +2,7 @@ package com.codegym.model.animal;
 
 import com.codegym.model.animal.enumerations.HealAnimals;
 import com.codegym.model.animal.enumerations.GenderAnimals;
+import com.codegym.model.foodplan.FoodPlan;
 
 public abstract class Animal {
 
@@ -13,6 +14,7 @@ public abstract class Animal {
     private HealAnimals heal;
     private GenderAnimals gender;
     private boolean isHungry;
+    private FoodPlan foodPlan;
 
     public double getWeight() {
         return weight;
@@ -97,6 +99,14 @@ public abstract class Animal {
 
     public void setHungry(boolean hungry) {
         isHungry = hungry;
+    }
+
+    public FoodPlan getFoodPlan() {
+        return foodPlan;
+    }
+
+    public void setFoodPlan(FoodPlan foodPlan) {
+        this.foodPlan = foodPlan;
     }
 
     @Override

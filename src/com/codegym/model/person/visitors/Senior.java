@@ -8,8 +8,8 @@ import com.codegym.model.ticket.SeniorTicket;
 public class Senior extends Visitor {
     private SeniorTicket seniorTicket;
 
-    public Senior(String name, String streetAddress, String city, String country, GenderPerson gender, int age, AgeCategory ageCategory, SeniorTicket seniorTicket) {
-        super(name, streetAddress, city, country, gender, age, AgeCategory.SENIOR);
+    public Senior(String name, String streetAddress, String city, String country, GenderPerson gender, int age, String visitorID, AgeCategory ageCategory, SeniorTicket seniorTicket) {
+        super(name, streetAddress, city, country, gender, age, visitorID, ageCategory);
         this.seniorTicket = seniorTicket;
     }
 

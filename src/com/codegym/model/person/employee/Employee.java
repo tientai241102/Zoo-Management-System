@@ -65,7 +65,7 @@ public class Employee extends Person {
 
     public void feedAnimalsEnclosure(Cage cage) {
         if (cage == null) {
-            throw new IllegalArgumentException("Chuồng phải chứa động vật..");
+            throw new IllegalArgumentException("Chuồng phải chứa động vật.");
         }
         for (Animal animal : cage.getAnimals()) {
             animal.setHungry(false);
